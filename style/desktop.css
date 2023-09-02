@@ -1,0 +1,36 @@
+@media (min-width: 1024px) {
+  .toggle__menu {
+    display: none;
+  }
+
+  .nav__container {
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    align-items: center;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation__items {
+    display: flex;
+    align-items: center;
+
+    background-color: azure;
+  }
+
+  .item {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+  }
+
+  .link {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+}

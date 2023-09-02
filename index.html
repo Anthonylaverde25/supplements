@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/mobile.css" />
+    <link rel="stylesheet" href="style/desktop.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container container__grid">
+      <!--USAR GRID PARA UNA SOLA COLUMNA-->
+      <!--TENDRA UN MAX-WIDTH DE 1200PX-->
+      <header class="header header__container">
+        <nav class="nav__container">
+          <div class="nav__container-toggleAndLogo">
+            <div class="toggle__menu">
+              <img
+                class="toggle__menu-img"
+                src="imagenes/iconos/icons8-menú-48.png"
+                alt=""
+              />
+            </div>
+            <div class="logo__header">
+              <img
+                class="logo__header-img"
+                src="imagenes/iconos/LogoSample_ByTailorBrands-removebg-preview.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="navigation">
+            <ul class="navigation__items">
+              <!--DISPLAY NONE PARA VERSION MOBILE-->
+              <li class="item"><a class="link" href="#">Inicio </a></li>
+              <li class="item"><a class="link" href="#">Tienda</a></li>
+              <li class="item"><a class="link" href="#">Nosotros </a></li>
+              <li class="item"><a class="link" href="#">Blog </a></li>
+              <li class="item"><a class="link" href="#">Contactanos</a></li>
+            </ul>
+          </div>
+
+          <div class="nav__container-cartAndLogin">
+            <div class="cart__header">
+              <img
+                class="cart__header-img"
+                src="imagenes/iconos/icons8-carrito-de-compras-48.png"
+                alt=""
+              />
+            </div>
+            <div class="login__header">
+              <img
+                class="login__header-img"
+                src="imagenes/iconos/icons8-usuario-48.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </nav>
+
+        <div class="overlay"></div>
+        <!--FONDO DEL MENU MOBILE -->
+      </header>
+    </div>
+  </body>
+</html>
