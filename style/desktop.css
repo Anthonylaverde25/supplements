@@ -1,4 +1,8 @@
 @media (min-width: 1024px) {
+  .header {
+    border: 1px solid;
+  }
+
   .toggle__menu {
     display: none;
   }
@@ -19,8 +23,6 @@
   .navigation__items {
     display: flex;
     align-items: center;
-
-    background-color: azure;
   }
 
   .item {
@@ -29,8 +31,31 @@
   }
 
   .link {
-    color: black;
+    color: var(--White, #fff);
     font-weight: bold;
     letter-spacing: 1.5px;
+  }
+
+  .header__hero {
+    .header__title {
+      display: block;
+      width: 50%;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 5px;
+      padding: 1rem;
+      color: var(--White, #fff);
+    }
+
+    .small__title {
+      display: block;
+      width: 50%;
+      text-align: center;
+      font-size: 1.5rem;
+      letter-spacing: 5px;
+      padding: 1rem;
+      color: var(--White, #fff);
+      font-weight: 400;
+    }
   }
 }

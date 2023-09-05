@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&family=Koh+Santepheap:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400&display=swap");
 
 * {
   padding: 0;
@@ -6,12 +7,13 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Poppins";
+  font-family: "Sora", sans-serif;
 }
 
 .toggle__menu-img {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 .logo__header-img {
@@ -19,14 +21,10 @@
   height: 80px;
 }
 
-.logo__header-img {
-}
-
 .cart__header-img {
   width: 30px;
   height: 30px;
 }
-
 .login__header-img {
   width: 30px;
   height: 30px;
@@ -43,4 +41,10 @@
   align-items: center;
   justify-content: space-around;
   gap: 1.5rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
