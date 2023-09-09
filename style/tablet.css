@@ -27,7 +27,9 @@
   }
 
   .newsletter {
-    margin-top: 30rem;
+    /*margin-top: 30rem;*/
+    margin-top: unset;
+
     .newsletter__container {
       background-color: black;
       flex-direction: row;
