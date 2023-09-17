@@ -1,5 +1,7 @@
 // ============= Aqui van los scripts del proyecto ===========
 
+// ==== Alerta de Formulrario ====
+
 const btn = document.getElementById('button');
 
 document.getElementById('form')
@@ -16,7 +18,7 @@ document.getElementById('form')
       btn.value = 'Enviar Mensaje';
       alert('Tu mensaje ha sido enviado con exito');
     }, (err) => {
-      btn.value = 'Send Email';
+      btn.value = 'Enviar Mensaje';
       alert(JSON.stringify(err));
     });
 });
