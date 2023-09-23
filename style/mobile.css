@@ -354,7 +354,17 @@ main {
   margin-top: 5px;
 }
 
-.container__2 {
-  /*
-  border: 3px solid;*/
+.top {
+  position: relative;
+  filter: blur(0);
+  transition: filter 0.6s ease;
+}
+.top:hover {
+  filter: blur(10px);
+}
+
+.top__card {
+  position: absolute;
+
+  top: 100%;
 }
