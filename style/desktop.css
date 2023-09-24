@@ -150,20 +150,20 @@
     grid-row-gap: 0px;
   }
 
-
   /* ========= Formulario =========== */
-  
-  .form__container{
+  /*
+  .form__container {
     box-sizing: border-box;
     width: 80%;
-    margin:auto;
+    margin: auto;
     margin-top: 64px;
     margin-bottom: 64px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
-    
-}
+  }*/
+
+  /*
 .info-form h2{
     margin-bottom: 15px;
     font-size: 35px
@@ -226,5 +226,5 @@
     background: var(--Red, #700000);
   
 }
-
+*/
 }
