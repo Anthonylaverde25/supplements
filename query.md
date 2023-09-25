@@ -1,0 +1,11 @@
+## TABLET = APARTIR DE ESTAS MEDIDAS SE APLICAN LOS ESTILOS
+
+@media (min-width: 768px) {
+
+}
+
+## DESKTOP = APARTIR DE ESTAS MEDIDAS SE APLICAN LOS ESTILOS
+
+@media (min-width: 1024px) {
+
+}

@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&family=Koh+Santepheap:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Sora", sans-serif;
+}
+
+.toggle__menu-img {
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.logo__header-img {
+  width: 100px;
+  height: 80px;
+}
+
+.cart__header-img {
+  width: 25px;
+  height: 20px;
+}
+.login__header-img {
+  width: 25px;
+  height: 20px;
+}
+
+.nav__container-toggleAndLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__container-cartAndLogin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.generalBTN {
+  display: block;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--White, #fff);
+  font-family: Sora;
+  background: var(--Red, #9a0000);
+  letter-spacing: 2px;
+}
+
+/* estilos generales para el carousel */
+
+.points__container {
+  display: flex;
+  justify-content: center;
+
+  .nav__carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 70%;
+
+    .point {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: rgb(209, 202, 202);
+    }
+  }
+}
+
+/* estilos generales de las card para el carouse */
+
+.card__img img {
+  width: 170px;
+  height: 200px;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f2f6;
+  border-radius: 10px;
+}
+
+.small__titleProduct {
+  text-align: center;
+  font-family: Sora;
+}
+
+.title {
+  font-family: Sora;
+  text-align: center;
+  font-weight: 600;
+}
+
+.price__paragraph {
+  font-family: Sora;
+}
+
+.addBTN {
+  margin-bottom: 0.5rem;
+  padding: 10px;
+}
+
+.ourProduct {
+  /*
+  height: 100vh;*/
+}
+
+.items {
+  height: 100%;
+}
+
+.items img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.benefit__icon-contend {
+  width: 40px;
+  height: 40px;
+}
+
+.btnGeneral {
+  width: 10rem;
+  padding: 1rem;
+  display: block;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--White, #fff);
+  font-family: Sora;
+  background: var(--Red, #9a0000);
+  letter-spacing: 2px;
+  margin-top: 1.5rem;
+}
+
+.suscribe__img-contend {
+  width: 100px;
+  height: 100px;
+}
+
+.input__img {
+  width: 25px;
+  height: 25px;
+}
+
+.img__contact {
+  width: 20px;
+  height: 20px;
+}
+
+.imgSocialMedia {
+  width: 35px;
+  height: 35px;
+}
