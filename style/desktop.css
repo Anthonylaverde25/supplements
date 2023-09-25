@@ -1,0 +1,236 @@
+@media (min-width: 1024px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .header {
+    border: 1px solid;
+  }
+
+  .toggle__menu {
+    display: none;
+  }
+
+  .nav__container {
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    align-items: center;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation__items {
+    display: flex;
+    align-items: center;
+  }
+
+  .item {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+  }
+
+  .link {
+    color: var(--White, #fff);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+
+  .header__hero {
+    .header__title {
+      display: block;
+      width: 50%;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 5px;
+      padding: 1rem;
+      color: var(--White, #fff);
+    }
+
+    .small__title {
+      display: block;
+      width: 50%;
+      text-align: center;
+      font-size: 1.5rem;
+      letter-spacing: 5px;
+      padding: 1rem;
+      color: var(--White, #fff);
+      font-weight: 400;
+    }
+  }
+
+  .carousel__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .ourProduct__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .ourProduct__layout {
+    width: 98%;
+    .container__img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 10px;
+
+      .top {
+        height: 400px;
+        width: 90%;
+      }
+      .aside {
+        height: 400px;
+        width: 90%;
+      }
+      .bot {
+        height: 400px;
+        width: 90%;
+      }
+    }
+
+    .container__iconsBenefits {
+      padding: 1rem;
+      width: 50%;
+    }
+  }
+
+  .newsletter {
+    /* margin-top: 15rem;*/
+    margin-top: unset;
+
+    .newsletter__container {
+      background-color: black;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 1px solid white;
+
+      .newsletter__text {
+        border: 1px solid;
+
+        .newsletter__title {
+          font-family: Sora;
+          font-size: 60px;
+          color: var(--White, #fff);
+          text-align: center;
+          margin-bottom: 1rem;
+          border: 1px solid;
+        }
+
+        .newsletter__paragraph {
+          padding: 0.5rem 0;
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          color: var(--White, #fff);
+        }
+      }
+    }
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+
+  /* ========= Formulario =========== */
+  
+  .form__container{
+    box-sizing: border-box;
+    width: 80%;
+    margin:auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    
+}
+.info-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.info-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.info-form a{
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.icon {
+  font-size: 20px;
+  margin: 12px;
+  color: #9a0000;
+}
+
+.form__content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    outline: 0px;
+    resize: none;
+}
+.info-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.btn-enviar{
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--White, #fff);
+    font-family: Sora;
+    font-weight: bold;
+    background: var(--Red, #9a0000);
+    border-style:none;
+    letter-spacing: 2px;
+    
+}
+.btn-enviar:hover{
+    background: var(--Red, #700000);
+  
+}
+
+.alertas{
+  display: flex;
+  color: #9a0000;
+  font-weight: bold;
+}
+
+}
