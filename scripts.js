@@ -36,7 +36,6 @@ form.addEventListener("submit", e=>{
  .addEventListener('submit', function(event) {
   event.preventDefault();
 
-
    btn.value = 'Enviando...';
 
    const serviceID = 'default_service';
