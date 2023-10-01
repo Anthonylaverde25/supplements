@@ -94,7 +94,6 @@
         height: 400px;
         width: 90%;
       }
-
       .aside {
         height: 400px;
         width: 90%;
@@ -161,40 +160,40 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
-  }*/
-
-  /*
-.info-form h2{
+  }
+  .info-form h2 {
     margin-bottom: 15px;
-    font-size: 35px
-}
-.info-form p{
+    font-size: 35px;
+  }
+  .info-form p {
     font-size: 17px;
     line-height: 1.6;
     margin-bottom: 30px;
-}
-.info-form a{
+  }
+  .info-form a {
     font-size: 17px;
     display: inline-block;
     width: 100%;
     margin-bottom: 15px;
     color: black;
     font-weight: 700;
-}
+  }
 
-.icon {
-  font-size: 20px;
-  margin: 12px;
-}
+  .icon {
+    font-size: 20px;
+    margin: 12px;
+    color: #9a0000;
+  }
 
-.form__content{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content:space-between;
-}
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-.campo, textarea{
+  .campo,
+  textarea {
     width: 100%;
     padding: 15px 10px;
     font-size: 16px;
@@ -203,14 +202,14 @@
     border-radius: 8px;
     outline: 0px;
     resize: none;
-}
-.info-form form textarea{
+  }
+  .info-form form textarea {
     max-width: 530px;
     min-width: 530px;
     min-height: 140px;
     max-height: 150px;
-}
-.btn-enviar{
+  }
+  .btn-enviar {
     display: block;
     padding: 1rem;
     border-radius: 8px;
@@ -218,13 +217,16 @@
     font-family: Sora;
     font-weight: bold;
     background: var(--Red, #9a0000);
-    border-style:none;
+    border-style: none;
     letter-spacing: 2px;
-    
-}
-.btn-enviar:hover{
+  }
+  .btn-enviar:hover {
     background: var(--Red, #700000);
-  
-}
-*/
-}
+  }
+
+  .alertas {
+    display: flex;
+    color: #9a0000;
+    font-weight: bold;
+  }
+}*/
