@@ -17,8 +17,8 @@
 }
 
 .logo__header-img {
-  width: 200px;
-  height: 110px;
+  width: 100px;
+  height: 80px;
 }
 
 .cart__header-img {
@@ -84,7 +84,7 @@
 /* estilos generales de las card para el carouse */
 
 .card__img img {
-  width: 130px;
+  width: 170px;
   height: 200px;
 }
 .card__info {
