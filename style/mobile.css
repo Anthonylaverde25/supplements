@@ -17,7 +17,8 @@
 }
 
 .header__container {
-  background-image: url(../imagenes/image/EnvaseSuplementoSinFondo.png), url("../imagenes/image/Banner.png");
+  background-image: url(../imagenes/image/EnvaseSuplementoSinFondo.png),
+    url("../imagenes/image/Banner.png");
   background-color: #252525;
   background-repeat: no-repeat, no-repeat;
   background-position: 90%, center;
@@ -35,7 +36,6 @@
   grid-row-gap: 0px;
   height: 100px;
   width: 95%;
-  padding: 15px;
   margin: 0 auto;
   z-index: 100;
   position: relative;
