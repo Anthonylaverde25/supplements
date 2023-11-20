@@ -584,5 +584,95 @@ main {
   /*
   height: 100vh;*/
 }
+
+.aboutUS {
+  display: flex;
+  width: 90%;
+  padding: 0.5rem;
+  margin: 1rem;
 }
 
+.about__container {
+    font-size: 90%;
+}
+
+.nostros__container {
+  width: 90%;
+  padding: 10%;
+  font-size: 70%;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.989);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.carts a{
+  letter-spacing: normal;
+}
+
+.input__img {
+  display: none;
+}
+
+
+.suscribe
+.input__container
+.btnNewsletter {
+  width: auto;
+}
+
+.btn-showcart {
+  width: 70px;
+  font-size: 70%;
+  padding: 5px;
+  height: auto;
+  border-radius: 6px;
+}
+
+}
+
+@media only screen and (max-width: 235px){
+
+  .nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+.nostros__container {
+    width: 90%;
+    padding: 10%;
+    font-size: 70%;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.989);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 90%;
+  padding: .5rem;
+  margin: auto;
+}
+
+.info-form {
+  font-size: 90%;
+}
+
+.info-form h2 {
+  font-size: 90%;
+}
+
+.info-form a {
+  font-size: 90%;
+}
+
+.carts a{
+  letter-spacing: normal;
+}
+
+}
