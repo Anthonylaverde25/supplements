@@ -30,74 +30,78 @@
       <!--EL HEADER CONTAINER TIENE UN WIDTH DEL 100% MAS NO EL CONTAINER DEL MAIN-->
 
       <nav class="nav__container">
-        <div class="nav__container-toggleAndLogo">
-          <div class="toggle__menu">
-            <img
-              class="toggle__menu-img"
-              src="imagenes/iconos/bars-solid.svg"
-              alt=""
-            />
-          </div>
+        <div class="nav__container-toggleAndLogo burger-menu">
+            <button class="burger-btn">
+                <img class="burger-btn" src="imagenes/iconos/bars-solid.svg" alt="">
+            </button>        
+            <div id="navList" class="burger-nav">
+                <button class="close-btn">&times;</button>
+                <ul>
+                  <li><a class="link" href="#inicio">Inicio</a></li>
+                  <li><a class="link" href="#tienda">Tienda</a></li>
+                  <li><a class="link" href="#nosotros">Nosotros </a></li>
+                  <li><a class="link" href="#suscribite">Suscribite </a></li>
+                  <li><a class="link" href="#contactanos">Contactanos</a>
+                </ul>
+        </div>
           <div class="logo__header">
-            <img
-              class="logo__header-img"
+            <a class="link" href="#inicio"></a>
+            <img 
+              class="logo__header-img"  href="#inicio"
               src="imagenes/image/LogoSinFondo.png"
-              alt=""
-            />
+              alt=""/>
+          </a>
           </div>
         </div>
 
         <div class="navigation">
           <ul class="navigation__items">
-            <li class="item"><a class="link" href="#inicio">Inicio </a></li>
             <li class="item"><a class="link" href="#tienda">Tienda</a></li>
             <li class="item"><a class="link" href="#nosotros">Nosotros </a></li>
-            <li class="item">
-              <a class="link" href="#contactanos">Contactanos</a>
+            <li class="item"><a class="link" href="#suscribite">Suscribite </a></li>
+            <li class="item"><a class="link" href="#contactanos">Contactanos</a>
             </li>
           </ul>
         </div>
 
         <div class="nav__container-cartAndLogin">
-          <div class="cart__header">
-            <img
-              class="cart__header-img"
-              src="imagenes/iconos/cart-shopping-solid.svg"
-              alt=""
-            />
+        <div class="header-section container-cart">
+          <div>
+             <img class="cart" id="myImage" onclick="showCart(this)" src="./imagenes/iconos/cart-shopping-solid.svg" alt=""> 
+             <p class="count-product">0</p>
           </div>
-          <div class="login__header">
-            <img
-              class="login__header-img"
-              src="imagenes/iconos/user-solid.svg"
-              alt=""
-            />
+          <div class="cart-products" id="products-id">
+              <p class="close-btn" onclick="closeBtn()">X</p>           <h3>Mi carrito</h3>
+              <div class="card-items">
+              </div>
+              <h2>Total: $<strong class="price-total">0</strong></h2>
           </div>
+      </div>
         </div>
       </nav>
 
-      <div class="overlay"></div>
-
       <div class="header__hero">
-        <h2 class="header__title">MAGYC</h2>
+        <h2 class="header__title">MAGYC<img class="imgprincipal" src="./imagenes/iconos/estrellasBlancas.ico"></h2>
         <small class="small__title"> Impulsate al siguiente nivel</small>
         <div class="header__button">
-          <button class="btn btn__buyNow">Comprar ahora</button>
+          <a href="#tienda"><button class="btn btn__buyNow">Comprar ahora</button></a>
         </div>
       </div>
     </header>
 
     <div class="container container__grid">
       <main class="main">
-        <section class="aboutUS">
+
+        <section>
+          <div class="aboutUS">
           <div class="about__container">
+            <h1>
+              Nuestro trabajo, Nuestra Pasión
+            </h1>
             <div class="about__description">
-              <h3 class="about__title">
-                Nuestro trabajo, Nuestra <span>pasión</span>
-              </h3>
               <div class="about__paragraph">
                 <p class="paragraph">
-                  Estamos haciendo un cambio con nuestros productos, los más
+                  Creemos en el cambio, por eso nuestros productos estén hechos de los más
                   nuevos y mejores ingredientes para crear e impulsar las
                   proteinas en polvo al sigueinte nivel. Alta calidad es nuestra
                   principal denominación. Lo hicimos pensando y conociendo cada
@@ -105,216 +109,86 @@
                 </p>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="carousel">
-          <a name="tienda"></a>
-          <div class="carousel__container">
-            <div class="carousel__container-slider">
-              <!--CARD-->
-              <div class="card">
-                <div class="card__img">
-                  <img
-                    class="card__img-contend"
-                    src="imagenes/image/EnvaseSuplementoSinFondo.png"
-                    alt=""
-                  />
-                </div>
-                <div class="card__info">
-                  <small class="small__titleProduct"
-                    >Proteina sabor chocolate</small
-                  >
-                  <div class="product__title">
-                    <h2 class="title">Suplement name</h2>
-                  </div>
-                  <div class="product__price">
-                    <p class="price__paragraph">
-                      Price: $ <span class="price">15.000</span>
-                    </p>
-                  </div>
-                  <div class="card__button">
-                    <button class="generalBTN addBTN btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
-
-              <!--CARD-->
-              <div class="card">
-                <div class="card__img">
-                  <img
-                    class="card__img-contend"
-                    src="imagenes/image/EnvaseSuplementoSinFondo.png"
-                    alt=""
-                  />
-                </div>
-                <div class="card__info">
-                  <small class="small__titleProduct"
-                    >Proteina sabor chocolate</small
-                  >
-                  <div class="product__title">
-                    <h2 class="title">Suplement name</h2>
-                  </div>
-                  <div class="product__price">
-                    <p class="price__paragraph">
-                      Price: $ <span class="price">15.000</span>
-                    </p>
-                  </div>
-                  <div class="card__button">
-                    <button class="generalBTN addBTN btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
-
-              <!--CARD-->
-              <div class="card">
-                <div class="card__img">
-                  <img
-                    class="card__img-contend"
-                    src="imagenes/image/EnvaseSuplementoSinFondo.png"
-                    alt=""
-                  />
-                </div>
-                <div class="card__info">
-                  <small class="small__titleProduct"
-                    >Proteina sabor chocolate</small
-                  >
-                  <div class="product__title">
-                    <h2 class="title">Suplement name</h2>
-                  </div>
-                  <div class="product__price">
-                    <p class="price__paragraph">
-                      Price: $ <span class="price">15.000</span>
-                    </p>
-                  </div>
-                  <div class="card__button">
-                    <button class="generalBTN addBTN btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
-
-              <!--CARD-->
-              <div class="card">
-                <div class="card__img">
-                  <img
-                    class="card__img-contend"
-                    src="imagenes/image/istockphoto-171315655-612x612-removebg-preview.png"
-                    alt=""
-                  />
-                </div>
-                <div class="card__info">
-                  <small class="small__titleProduct"
-                    >Proteina sabor chocolate</small
-                  >
-                  <div class="product__title">
-                    <h2 class="title">Suplement name</h2>
-                  </div>
-                  <div class="product__price">
-                    <p class="price__paragraph">
-                      Price: $ <span class="price">15.000</span>
-                    </p>
-                  </div>
-                  <div class="card__button">
-                    <button class="generalBTN addBTN btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
-
-              <!--CARD-->
-              <div class="card">
-                <div class="card__img">
-                  <img
-                    class="card__img-contend"
-                    src="imagenes/image/istockphoto-171315655-612x612-removebg-preview.png"
-                    alt=""
-                  />
-                </div>
-                <div class="card__info">
-                  <small class="small__titleProduct"
-                    >Proteina sabor chocolate</small
-                  >
-                  <div class="product__title">
-                    <h2 class="title">Suplement name</h2>
-                  </div>
-                  <div class="product__price">
-                    <p class="price__paragraph">
-                      Price: $ <span class="price">15.000</span>
-                    </p>
-                  </div>
-                  <div class="card__button">
-                    <button class="generalBTN addBTN btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
-
-              <!--CARD-->
-              <div class="card">
-                <div class="card__img">
-                  <img
-                    class="card__img-contend"
-                    src="imagenes/image/istockphoto-171315655-612x612-removebg-preview.png"
-                    alt=""
-                  />
-                </div>
-                <div class="card__info">
-                  <small class="small__titleProduct"
-                    >Proteina sabor chocolate</small
-                  >
-                  <div class="product__title">
-                    <h2 class="title">Suplement name</h2>
-                  </div>
-                  <div class="product__price">
-                    <p class="price__paragraph">
-                      Price: $ <span class="price">15.000</span>
-                    </p>
-                  </div>
-                  <div class="card__button">
-                    <button class="generalBTN addBTN btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
-
-              <!--CARD-->
-              <div class="card">
-                <div class="card__img">
-                  <img
-                    class="card__img-contend"
-                    src="imagenes/image/istockphoto-171315655-612x612-removebg-preview.png"
-                    alt=""
-                  />
-                </div>
-                <div class="card__info">
-                  <small class="small__titleProduct"
-                    >Proteina sabor chocolate</small
-                  >
-                  <div class="product__title">
-                    <h2 class="title">Suplement name</h2>
-                  </div>
-                  <div class="product__price">
-                    <p class="price__paragraph">
-                      Price: $ <span class="price">15.000</span>
-                    </p>
-                  </div>
-                  <div class="card__button">
-                    <button class="generalBTN addBTN btn">Comprar</button>
-                  </div>
-                </div>
-              </div>
+            <div>
+              <a name="tienda"></a>
+              <h1>¡Probá la variedad de sabores disponibles en nuestra tienda!</h1>
             </div>
           </div>
-          <div class="points__container">
-            <ul class="nav__carousel points">
-              <li class="point"></li>
-              <li class="point"></li>
-              <li class="point"></li>
-              <li class="point"></li>
-            </ul>
-          </div>
         </section>
 
-        <section class="ourProduct">
-          <a name="nosotros"></a>
+        <!-- ============== Carousel ======================= -->
+        <section class="carousel">
+          <div class="wrapper">
+            <div class="slider">
+                 <div class="slide">
+                  <a href="#vainilla"><img src="imagenes/image/vainilla.png" /></a>
+                  <a href="#chocolate"><img src="imagenes/image/barrachoco.png" /></a>
+                  <a href="#cookiesAndCream"><img src="imagenes/image/cookiesandicecream.png" /></a>
+                  <a href="#dulceDeleche"><img src="imagenes/image/dulcedeleche.png" /></a>
+                  <a href="#frutilla"><img src="imagenes/image/frutilla.png" /></a>
+                 </div>
+                 <div class="slide">
+                  <a href="#vainilla"><img src="imagenes/image/vainilla.png" /></a>
+                  <a href="#chocolate"><img src="imagenes/image/barrachoco.png" /></a>
+                  <a href="#cookiesAndCream"><img src="imagenes/image/cookiesandicecream.png" /></a>
+                  <a href="#dulceDeleche"><img src="imagenes/image/dulcedeleche.png" /></a>
+                  <a href="#frutilla"><img src="imagenes/image/frutilla.png" /></a>
+                 </div>
+             </div>
+       </div>
+      </section>
+          
+
+        <!--==========Productos para Carrito=================-->
+
+        <section class="container-cart">
+          <div class="products-cart">
+              <div class="carts">
+                  <div>
+                      <img  id="vainilla" src="./imagenes/image/envVainillaSF.png" alt="">
+                      <p><span>15000</span>$</p>
+                  </div>
+                  <p class="title">Proteína en polvo sabor Vainilla</p>
+                  <a href="" data-id="1" class="btn-add-cart">ver en carrito</a>
+              </div>
+              <div class="carts">
+                  <div>
+                      <img id="chocolate" src="./imagenes/image/envChocoSF.png" alt="">
+                      <p><span>15500</span>$</p>
+                  </div>
+                  <p class="title">Proteína en polvo sabor chocolate</p>
+                  <a href="" class="btn-add-cart" data-id="2">ver en carrito</a>
+              </div>
+              <div class="carts">
+                  <div>
+                      <img id="frutilla" src="./imagenes/image/envFrutillaSF.png" alt="">
+                      <p><span>16000</span>$</p>
+                  </div>
+                  <p class="title"> Proteína en polvo sabor frutilla</p>
+                  <a href="" data-id="3" class="btn-add-cart">ver en carrito</a>
+              </div>
+              <div class="carts">
+                  <div>
+                      <img id="dulceDeLeche" src="./imagenes/image/envDulceSF.png" alt="">
+                      <p><span>16500</span>$</p>
+                  </div>
+                  <p class="title">Proteína en polvo sabor dulce de leche</p>
+                  <a href="" data-id="4" class="btn-add-cart">ver en carrito</a>
+              </div>
+              <div class="carts">
+                  <div>
+                      <img id="cookiesAndCream" src="./imagenes/image/envCookieSF.png" alt="">
+                      <p><span>17000</span>$</p>
+                  </div>
+                  <p class="title">Proteína en polvo sabor cookies and cream</p>
+                  <a href="" data-id="5" class="btn-add-cart">ver en carrito</a>
+              </div>
+          </div>
+      </section>
+
+      <section class="ourProduct">
           <div class="ourProduct__container">
-            <div class="ourProduct__title">
+            <!-- <div class="ourProduct__title">
               <h2 class="ourTitle">Our Product</h2>
               <div class="ourProduct__description">
                 <p>
@@ -327,11 +201,12 @@
               <button class="btn btnAllProduct btnGeneral">
                 Todos los productos
               </button>
-            </div>
+            </div> -->
 
             <div class="ourProduct__layout">
               <div class="container__img">
                 <div class="top">
+                  <a name="suscribite"></a>
                   <div class="items item1">
                     <img
                       src="imagenes/image/gente-que-ejercita-gimnasio.jpg"
@@ -342,7 +217,7 @@
                 <div class="bot">
                   <div class="items item2">
                     <img
-                      src="imagenes/image/strongman-with-can-of-supplements-royalty-free-image-1587716220.jpg"
+                      src="imagenes/image/hombre.jpg"
                       alt=""
                     />
                   </div>
@@ -351,35 +226,6 @@
                   <div class="items item3">
                     <img src="imagenes/image/header.jpg" alt="" />
                   </div>
-                </div>
-              </div>
-
-              <div class="container__iconsBenefits">
-                <div class="iconsBenefits">
-                  <img
-                    class="benefit__icon-contend"
-                    src="imagenes/image/inyeccion.png"
-                    alt=""
-                  />
-                  <h3 class="iconsBenefits-title">Libre de Dopaje</h3>
-                </div>
-
-                <div class="iconsBenefits">
-                  <img
-                    class="benefit__icon-contend"
-                    src="imagenes/image/sin-gluten (2).png"
-                    alt=""
-                  />
-                  <h3 class="iconsBenefits-title">Libre de Gluten</h3>
-                </div>
-
-                <div class="iconsBenefits">
-                  <img
-                    class="benefit__icon-contend"
-                    src="imagenes/image/buena-calidad.png"
-                    alt=""
-                  />
-                  <h3 class="iconsBenefits-title">Calidad Superio</h3>
                 </div>
               </div>
             </div>
@@ -392,11 +238,10 @@
       <div class="newsletter">
         <div class="newsletter__container">
           <div class="newsletter__text">
-            <h3 class="newsletter__title">newsletter</h3>
+            <h3 class="newsletter__title">Suscribite</h3>
             <div class="newsletter__paragraph">
               <p>
-                Subscribe to our newsletter for more information about our
-                offers and products
+                Te invitamos a conocer sobre nuestras novedades y productos
               </p>
             </div>
 
@@ -411,7 +256,7 @@
                 </div>
 
                 <button class="btnNewsletter" type="submit">
-                  send
+                  Enviar
                   <img
                     class="input__img"
                     src="imagenes/iconos/arrow-right-solid.svg"
@@ -424,7 +269,7 @@
           <div class="suscribe__img">
             <img
               class="suscribe__img-contend"
-              src="imagenes/image/strongman-with-can-of-supplements-royalty-free-image-1587716220.jpg"
+              src="./imagenes/image/hombreconenvase.png"
               alt=""
             />
           </div>
@@ -432,22 +277,82 @@
       </div>
     </div>
 
+    <!-- ============== Nosotros ================= -->
+
+   <section>
+    <a name="nosotros"></a>
+    <div class="nosotros">
+          <div class="nostros__container">
+            <h1>
+              Nosotros
+            </h1>
+            <div class="nosotros__description">
+              <div class="nosotros__paragraph">
+                <p>
+                  ¡Bienvenidos al mundo Magyc! Somos pioneros en nutrición deportiva, ofreciendo proteínas en polvo de la más alta calidad. En Magyc, la excelencia es nuestra filosofía. Nos destacamos por poseer  rigurosos estándares de calidad, innovación constante y un compromiso total con la transparencia. Cada producto lleva consigo la garantía de los mejores ingredientes, seleccionados con cuidado para lograr eficacia.
+                </p>
+                <p>Nos esforzamos por ir más allá de lo convencional, ofreciéndote no solo productos excepcionales, sino una experiencia que estimula tus sentidos. Creemos en alimentar tu cuerpo con lo mejor para lograr tus objetivos de manera efectiva y deliciosa.
+
+                </p>
+                <p>Al unirte a Magyc, te unes a una comunidad comprometida con la excelencia en el rendimiento y el bienestar. Más que productos, ofrecemos un estilo de vida centrado en la salud y la vitalidad.
+
+                </p>
+                <p>Gracias por elegir Magyc. Estamos emocionados de ser tu aliado en tu búsqueda de un estilo de vida más saludable y activo.
+                </p>
+                <h4>El Grupito.
+                </h4>
+                <h4>Magyc</h4>
+                
+                <div class="container__iconsBenefits">
+                  <div class="iconsBenefits">
+                    <img
+                      class="benefit__icon-contend"
+                      src="imagenes/image/inyeccion.png"
+                      alt=""
+                    />
+                    <h3 class="iconsBenefits-title">Libre de Dopaje</h3>
+                  </div>
+  
+                  <div class="iconsBenefits">
+                    <img
+                      class="benefit__icon-contend"
+                      src="imagenes/image/sin-gluten (2).png"
+                      alt=""
+                    />
+                    <h3 class="iconsBenefits-title">Libre de Gluten</h3>
+                  </div>
+  
+                  <div class="iconsBenefits">
+                    <img
+                      class="benefit__icon-contend"
+                      src="imagenes/image/buena-calidad.png"
+                      alt=""
+                    />
+                    <h3 class="iconsBenefits-title">Calidad Superior</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+        </section>
+
     <div class="container">
       <a name="contactanos"></a>
       <div class="form__container">
         <div class="info-form">
           <h2>Contáctanos</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            eligendi est voluptates quae ipsam eius, in quasi odio porro aut vel
-            beatae aperiam.
+            Tu opinión es muy valiosa para nosotros. ¿Tienes alguna pregunta, comentario o sugerencia? Estamos aquí para ayudarte. Contáctanos a través del formulario o envía un correo a la direccion de mail que aparece a continuación. ¡Esperamos con interés conocerte y ser parte de tu camino hacia un estilo de vida más saludable con MAGYC Suplementos!
           </p>
-          <a href="#"><i class="icon fa-solid fa-phone"></i>123-456-789</a>
+          <a href="#"><i class="icon fa-solid fa-phone"></i>11 2233 4455</a>
           <a href="#"
-            ><i class="icon fa-solid fa-envelope"></i>email@tudominio.com</a
+            ><i class="icon fa-solid fa-envelope"></i>Contacto@magyc.com.ar</a
           >
           <a href="#"
-            ><i class="icon fa-solid fa-location-dot"></i> Ciudad, Pais</a
+            ><i class="icon fa-solid fa-location-dot"></i>Buenos Aires, Argentina</a
           >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168881864515!2d-58.3841453255361!3d-34.60373445749684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1694908840355!5m2!1ses-419!2sar"
@@ -492,73 +397,49 @@
       </div>
     </div>
 
+    <a href="#inicio" class="btn-showcart"> ¡Revisa tu carrito!</a>
+
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer__contact">
-          <ul class="contacts__items">
-            <li class="itemFooterContact">
-              <img
-                class="img__contact"
-                src="imagenes/iconos/location-dot-solid.svg"
-                alt=""
-              />
-              <p>Directions: <span>Avenida conquista</span></p>
-            </li>
-            <li id="contact" class="itemFooterContact">
-              <img
-                class="img__contact"
-                src="imagenes/iconos/envelope-solid.svg"
-                alt=""
-              />
-              <p>Email: <span>Proyecto@gmail.com</span></p>
-            </li>
-            <li class="itemFooterContact">
-              <img
-                class="img__contact"
-                src="imagenes/iconos/phone-solid.svg"
-                alt=""
-              />
-              <p>Number: <span>+54 11 123 145</span></p>
-            </li>
-          </ul>
-        </div>
-
         <div class="footer__social">
           <div class="socialMedia__container">
-            <img
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img
               class="imgSocialMedia"
               src="imagenes/iconos/whatsapp.svg"
               alt=""
-            />
-            <img
-              class="imgSocialMedia"
-              src="imagenes/iconos/instagram.svg"
-              alt=""
-            />
-            <img
+            /></a>
+            <a href="https://twitter.com/" target="_blank"><img
               class="imgSocialMedia"
               src="imagenes/iconos/x-twitter.svg"
               alt=""
-            />
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"><img
+              class="imgSocialMedia"
+              src="imagenes/iconos/instagram.svg"
+              alt=""
+            /></a>
           </div>
           <small class="smallSocialTitle">
-            Follow us on our social networks
+            ¡Síguenos en nuestras redes sociales!
           </small>
         </div>
 
         <div class="footer__nav">
           <ul class="nav__fotterItems">
             <li class="itemsFooterNav">
-              <p><a href="#">Home</a></p>
+              <p><a href="#inicio">Inicio</a></p>
             </li>
             <li class="itemsFooterNav">
-              <p><a href="#">Frequent questions</a></p>
+              <p><a href="#tienda">Tienda</a></p>
             </li>
             <li class="itemsFooterNav">
-              <p><a href="#">Contact us</a></p>
+              <p><a href="#nosotros">Nosotros</a></p>
             </li>
             <li class="itemsFooterNav">
-              <p><a href="#">About us</a></p>
+              <p><a href="#suscribite">Sucribite</a></p>
+            </li>
+            <li class="itemsFooterNav">
+              <p><a href="#contactanos">Contactanos</a></p>
             </li>
           </ul>
         </div>
@@ -571,6 +452,7 @@
 
     <!-- ==== Formulario ==== -->
     <script src="scripts.js"></script>
+    <script src="javascript/shopping_cart.js" ></script>
 
     <script
       type="text/javascript"
