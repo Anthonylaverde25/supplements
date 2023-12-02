@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center m-5 p-5">
+            <div class="card  text-center text-white bg-dark bg-gradient shadow rounded " style="max-width: 800px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./imagenes/image/LogoSinFondo.png" class="img-fluid rounded" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Inicia Sesion</h5>
+                        <form id="login-form">
+                            <div class="mb-3">
+                                <label for="username" class="form-label ">Username:</label>
+                                <input type="text" id="username" name="username" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password:</label>
+                                <input type="password" id="password" name="password" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger fw-bold">Login</button>
+                        </form>
+                    </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('login-form');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === 'admin' && password === 'password') {
+                window.location.href = './payment.html';
+            } else {
+                alert('Usuario o contraseña incorrectos');
+            }
+        });
+    </script>
+</body>
+</html>
