@@ -29,7 +29,9 @@ crossorigin="anonymous">
       </head>
 <body>
 <header id="header" >
-    <div class=" container bg-gradient"></div>
+    <div class=" container bg-gradient">
+        
+    </div>
 <!-- place navbar here -->
 </header>
 <main>
@@ -69,7 +71,7 @@ crossorigin="anonymous">
 <img width="60" :src="producto.imagen" :alt="producto.nombre">
 </td>
 <td>
-<a class="btn btn-primary" :href="'productoUpdate.html?id='+ producto.id" >Editar</a>
+<a class="btn btn-primary" :href="'paymentUpdate.html?id='+ producto.id" >Editar</a>
 <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
 </td>
 </tr>
