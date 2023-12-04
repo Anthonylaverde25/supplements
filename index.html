@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/a140bf42cf.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <title>MAGYC Suplementos</title>
     <link
@@ -41,8 +42,8 @@
                   <li><a class="link" href="#tienda">Tienda</a></li>
                   <li><a class="link" href="#nosotros">Nosotros </a></li>
                   <li><a class="link" href="#suscribite">Suscribite </a></li>
-                  <li><a class="link" href="#contactanos">Contactanos</a>
-                  <li class="item"><a class="link" href="./login.html">Ingresá</a>
+                  <li><a class="link" href="#contactanos">Contactanos</a></li>
+                  <li class="item"><a class="link" href="./login.html">Ingresá</a></li>
                 </ul>
         </div>
           <div class="logo__header">
@@ -57,11 +58,13 @@
 
         <div class="navigation">
           <ul class="navigation__items">
-            <li class="item"><a class="link" href="#tienda">Tienda</a></li>
-            <li class="item"><a class="link" href="#nosotros">Nosotros </a></li>
-            <li class="item"><a class="link" href="#suscribite">Suscribite </a></li>
-            <li class="item"><a class="link" href="#contactanos">Contactanos</a>
-            <li class="item"><a class="link" href="./login.html">Ingresá</a>
+            <li class="item"><a class="link text-decoration-none" href="#tienda">Tienda</a></li>
+            <li class="item"><a class="link text-decoration-none" href="#nosotros">Nosotros </a></li>
+            <li class="item"><a class="link text-decoration-none" href="#suscribite">Suscribite </a></li>
+            <li class="item"><a class="link text-decoration-none" href="#contactanos">Contactanos</a></li>
+            <li class="item"><button type="button" class="btn bg-transparent text-white fw-bold fs-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-user"></i>
+            </button></li>
               </li>
           </ul>
         </div>
@@ -86,7 +89,7 @@
         <h2 class="header__title">MAGYC<img class="imgprincipal" src="./imagenes/iconos/estrellasBlancas.ico"></h2>
         <small class="small__title"> Impulsate al siguiente nivel</small>
         <div class="header__button">
-          <a href="#tienda"><button class="btn btn__buyNow">Comprar ahora</button></a>
+          <a class="text-decoration-none" href="#contactanos"><button class="btn btn__buyNow">Comprar ahora</button></a>
         </div>
       </div>
     </header>
@@ -95,6 +98,34 @@
       <main class="main">
 
         <section>
+           <!-- ------------- MODAL -------------- -->
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content text-center text-white bg-dark bg-gradient">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"> Inica Sesion</h5>
+                  <button type="button" class="btn-close bg-body" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="mb-3">
+                            <label for="username" class="form-label ">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-danger fw-bold">Login</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!----------------------- SOBRE NOSOTROS ------------------- -->
+
           <div class="aboutUS">
           <div class="about__container">
             <h1>
@@ -341,13 +372,16 @@
         </div>
         </section>
 
+        <div class="m-3 p-3">  </div>
+
+  <section>
     <div class="container">
       <a name="contactanos"></a>
       <div class="form__container">
         <div class="info-form">
           <h2>Contáctanos</h2>
           <p>
-            Tu opinión es muy valiosa para nosotros. ¿Tienes alguna pregunta, comentario o sugerencia? Estamos aquí para ayudarte. Contáctanos a través del formulario o envía un correo a la direccion de mail que aparece a continuación. ¡Esperamos con interés conocerte y ser parte de tu camino hacia un estilo de vida más saludable con MAGYC Suplementos!
+            ¡Tenemos envíos a tu zona!, escríbenos para decirte cual sería el valor de tus productos mas el envío. Igualmente tu opinión es muy valiosa para nosotros. ¿Tienes alguna pregunta, comentario o sugerencia? Estamos aquí para ayudarte. Contáctanos a través del formulario o envía un correo a la direccion de mail que aparece a continuación. ¡Esperamos con interés conocerte y ser parte de tu camino hacia un estilo de vida más saludable con MAGYC Suplementos!
           </p>
           <a href="#"><i class="icon fa-solid fa-phone"></i>11 2233 4455</a>
           <a href="#"
@@ -398,8 +432,55 @@
         </form>
       </div>
     </div>
+  </section>
 
-    <a href="#inicio" class="btn-showcart"> ¡Revisa tu carrito!</a>
+  <div class="m-5 p-5">  </div>
+
+     <!-- --------- CRUD ------------- -->
+  <section>
+<div id="app" class="container">
+  <h1> ¡Comentarios de Nuestros Clientes!</h1>
+  <br>
+  <a class="btn btn-danger" href="comentariosNew.html">Comenta</a>
+  <br><br>
+  <div v-if="error">
+  <p>Lo sentimos , ........</p>
+  </div>
+  <div v-else>
+  <section v-if="cargando">
+  <div class="spinner-border"></div>
+  <p>Cargando .....</p>
+  </section>
+  <section v-else>
+  <!-- ------------------ CARDS !!------------- -->
+  
+  <div class="container m-4 p-1 w-auto">
+  <div class="card shadow p-3 mb-5 bg-body rounded-4" v-for="comentario in comentarios" >
+      <div class="card-header">
+      <div class="d-flex align-items-center">
+          <div class="flex-shrink-0 ">
+      <img width="60" :src="comentario.imagen" :alt="comentario.usuario">
+         </div>
+         <div class="flex-grow-1 ms-3">
+      <h5>{{comentario.usuario}}</h5>
+         </div>
+      </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-text">{{comentario.texto}}</h5>
+        <div id="yourDiv">
+        <a class="btn btn-danger m-4" :href="'comentarioUpdate.html?id='+ comentario.id" >Editar</a>
+  <button type="button" class="btn btn-outline-danger" v-on:click="eliminar(comentario.id)" >Eliminar</button>
+    </div>
+    </div>
+    </div> 
+  </div>
+  </section>
+  </div>
+  </div>
+  </section>
+
+    <a href="#inicio" class="btn-showcart fs-6 text-decoration-none"> ¡Revisa tu carrito!</a>
 
     <footer class="footer">
       <div class="footer__container">
@@ -466,5 +547,11 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="javascript/productos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script><!-- Link de Bootstrap-->
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="./javascript/comentarios.js"></script>
+    <script src="javascript/login.js"></script>
   </body>
 </html>

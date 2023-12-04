@@ -8,11 +8,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         data() {
             return {
                 id: 0,
-                nombre: "",
+                usuario: "",
                 imagen: "",
-                stock: 0,
-                precio: 0,
-                url: 'https://gerarevrol.pythonanywhere.com/productos/' + id,
+                texto: "",
+                url: 'https://gerarevrol.pythonanywhere.com/comentarios/' + id,
             }
         },
         methods: {
@@ -22,10 +21,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     .then(data => {
                         console.log(data)
                         this.id = data.id
-                        this.nombre = data.nombre;
+                        this.usuario = data.usuario;
                         this.imagen = data.imagen
-                        this.stock = data.stock
-                        this.precio = data.precio
+                        this.texto = data.texto
                     })
                     .catch(err => {
                         console.error(err);
@@ -33,14 +31,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     })
             },
             modificar() {
-                let producto = {
-                    nombre: this.nombre,
-                    precio: this.precio,
-                    stock: this.stock,
+                let comentario = {
+                    usuario: this.usuario,
+                    texto: this.texto,
                     imagen: this.imagen
                 }
                 var options = {
-                    body: JSON.stringify(producto),
+                    body: JSON.stringify(comentario),
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     redirect: 'follow'
@@ -48,7 +45,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 fetch(this.url, options)
                     .then(function () {
                         alert("Registro modificado")
-                        window.location.href = "./payment.html";
+                        window.location.href = "./index.html";
                     })
                     .catch(err => {
                         console.error(err);

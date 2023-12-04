@@ -2,18 +2,17 @@ const { createApp } = Vue
 createApp({
 data() {
 return {
-productos:[],
+comentarios:[],
 //url:'http://localhost:5000/productos',
 // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
-url:'https://gerarevrol.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
+url:'https://gerarevrol.pythonanywhere.com/comentarios', // si ya lo subieron a pythonanywhere
 error:false,
 cargando:true,
 /*atributos para el guardar los valores del formulario */
 id:0,
-nombre:"",
+usuario:"",
 imagen:"",
-stock:0,
-precio:0,
+texto:"",
 }
 },
 methods: {
@@ -21,7 +20,7 @@ fetchData(url) {
 fetch(url)
 .then(response => response.json())
 .then(data => {
-this.productos = data;
+this.comentarios = data;
 this.cargando=false
 })
 .catch(err => {
@@ -29,8 +28,8 @@ console.error(err);
 this.error=true
 })
 },
-eliminar(producto) {
-const url = this.url+'/' + producto;
+eliminar(comentario) {
+const url = this.url+'/' + comentario;
 var options = {
 method: 'DELETE',
 }
@@ -41,14 +40,13 @@ location.reload();
 })
 },
 grabar(){
-let producto = {
-nombre:this.nombre,
-precio: this.precio,
-stock: this.stock,
+let comentario = {
+usuario:this.usuario,
+texto: this.texto,
 imagen:this.imagen
 }
 var options = {
-body:JSON.stringify(producto),
+body:JSON.stringify(comentario),
 method: 'POST',
 headers: { 'Content-Type': 'application/json' },
 redirect: 'follow'
@@ -56,7 +54,7 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro grabado")
-window.location.href = "./payment.html";
+window.location.href = "./index.html";
 })
 .catch(err => {
 console.error(err);
