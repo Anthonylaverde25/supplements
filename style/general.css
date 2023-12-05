@@ -10,6 +10,10 @@
   font-family: "Sora", sans-serif;
 }
 
+.ocultar {
+  display: none;
+}
+
 .toggle__menu-img {
   width: 30px;
   height: 25px;
