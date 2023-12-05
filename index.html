@@ -43,7 +43,6 @@
                   <li><a class="link" href="#nosotros">Nosotros </a></li>
                   <li><a class="link" href="#suscribite">Suscribite </a></li>
                   <li><a class="link" href="#contactanos">Contactanos</a></li>
-                  <li class="item"><a class="link" href="./login.html">Ingresá</a></li>
                 </ul>
         </div>
           <div class="logo__header">
@@ -434,12 +433,18 @@
     </div>
   </section>
 
-  <div class="m-5 p-5">  </div>
+  <div class="m-4 p-4"> </div>
 
      <!-- --------- CRUD ------------- -->
   <section>
+    <div class="container d-flex flex-row-reverse bd-highlight">
+      <button id="mostrar" class=" bg-transparent fw-bold text-danger border-0 text-decoration-underline">Soy Admin</button>
+    <button id="ocultar" class="ocultar bg-transparent fw-bold text-danger border-0 text-decoration-underline">Salir de Admin</button>
+    </div>
 <div id="app" class="container">
+  <div class="d-flex justify-content-center">
   <h1> ¡Comentarios de Nuestros Clientes!</h1>
+</div>
   <br>
   <a class="btn btn-danger" href="comentariosNew.html">Comenta</a>
   <br><br>
@@ -468,7 +473,7 @@
       </div>
       <div class="card-body">
         <h5 class="card-text">{{comentario.texto}}</h5>
-        <div id="yourDiv">
+        <div id="yourDiv" class="ocultar">
         <a class="btn btn-danger m-4" :href="'comentarioUpdate.html?id='+ comentario.id" >Editar</a>
   <button type="button" class="btn btn-outline-danger" v-on:click="eliminar(comentario.id)" >Eliminar</button>
     </div>
